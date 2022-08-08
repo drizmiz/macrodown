@@ -3,9 +3,9 @@
 
 Enhance your [pandoc](https://pandoc.org) markdown with macros enabled. 
 
-Abbreviations are good. The pandoc extension `latex_macros` works good, but LaTeX definitions do not look good in markdown files. It does not support LaTeX arguments either. The already-exist pandoc filter [pandoc-abbreviations](https://github.com/scokobro/pandoc-abbreviations) needs a `+` that is unacceptable in math environments.
+Abbreviations are good. The pandoc extension `latex_macros` works well, but LaTeX definitions do not look good in markdown files. It does not support LaTeX arguments either. The already-exist pandoc filter [pandoc-abbreviations](https://github.com/scokobro/pandoc-abbreviations) needs a `+` that is unacceptable in math environments.
 
-**macrodown** is in development and currently covers nothing but this documentation. The syntax and usage described below is draft-only.
+**macrodown** is in development and currently covers nothing but this documentation. The syntax and usage described below are draft-only.
 
 ## Syntax
 
@@ -59,7 +59,7 @@ If the output format is not LaTeX, `macrodown` will do the replacements itself.
 
 Bool algebra support is now not desired by **macrodown**.
 
-### Undefine macros and Condition on definition
+### Undefine macros and Be conditional on definitions
 
 ```
 %#undef [identifier]
@@ -113,7 +113,7 @@ FORMAT can be md, latex, html and others.
 ```bash
 -r --replace
 ```
-Set options `--output=input_file --format=md`. Please be careful to backup your file in case that **macrodown** or pandoc does something bad to it.
+Set options `--output=input_file --format=md`. Please be careful to backup your file in case **macrodown** or pandoc does something bad to it.
 
 ```bash
 -R --raw
